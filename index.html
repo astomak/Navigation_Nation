@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Nation</title>
+    
+  <script type="module" crossorigin src="/assets/index.0fef01f8.js"></script>
+  <link rel="stylesheet" href="/assets/index.96f26e8b.css">
+</head>
+  <body>
+    <div class="underline absolute top-1 left-2 p-1 text-gray-300 text-xl font-light">Asto Design</div>
+    <!-- Navigation Menu -->
+    <div id="navIcon" class="p-2 space-y-1 cursor-pointer pt-2 absolute right-0 z-50" onclick="toggleOverlay()">
+      <div id="bar1" class="w-8 h-1 bg-gray-200"></div>
+      <!-- onClick - transform rotate-45 translate-y-3-->
+      <div id="bar2" class="w-8 h-1 bg-gray-200"></div>
+      <!-- onClick - opacity-0-->
+      <div id="bar3" class="w-8 h-1 bg-gray-200"></div>
+      <!-- onClick - transform -rotate-45 -translate-y-1-->
+    </div>
+    <!-- Overlay -->
+    <div id="overlay" class="h-screen w-full fixed z-[-1] bg-black opacity-25 transform -translate-x-full"></div>
+    <!-- Navigation -->
+    <nav class="h-screen w-full absolute flex flex-col text-gray-300 text-xl sm:text-2xl slide-out-left uppercase">
+      <a id="nav1" href="#home" class="h-full flex justify-center items-center bg-[#134A13]" onclick="toggleOverlay()">
+        <span class="transform hover:scale-125"> Home </span>
+      </a>
+      <a id="nav2" href="#about" class="h-full flex justify-center items-center bg-[#0E3838]">
+        <span class="transform hover:scale-125"> About </span>
+      </a>
+      <a id="nav3" href="#skill" class="h-full flex justify-center items-center bg-[#5D3718]">
+        <span class="transform hover:scale-125"> Skills </span>
+      </a>
+      <a id="nav4" href="#project" class="h-full flex justify-center items-center bg-[#5D1818]">
+        <span class="transform hover:scale-125"> Projects </span>
+      </a>
+      <a id="nav5" href="#contact" class="h-full flex justify-center items-center bg-[#480463]">
+        <span class="transform hover:scale-125"> Contact </span>
+      </a>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="h-screen w-full">
+      <!-- Background Image -->
+      <img
+        src="https://images.unsplash.com/photo-1556634202-129a046351c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        alt="river of stars"
+        class="object-cover h-screen w-full"
+      />
+    </section>
+    <section
+      id="about"
+      class="h-screen w-full bg-[#0E3838] flex justify-center items-center text-white text-2xl sm:text-4xl"
+    >
+      Learn more about me
+    </section>
+    <section
+      id="skill"
+      class="h-screen w-full bg-[#5D3718] flex justify-center items-center text-white text-2xl sm:text-4xl"
+    >
+      Skills that I've mastered
+    </section>
+    <section
+      id="project"
+      class="h-screen w-full bg-[#5D1818] flex justify-center items-center text-white text-2xl sm:text-4xl"
+    >
+      Project that I've done
+    </section>
+    <section
+      id="contact"
+      class="h-screen w-full bg-[#480463] flex justify-center items-center text-white text-2xl sm:text-4xl"
+    >
+      See my Github for more designs
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
